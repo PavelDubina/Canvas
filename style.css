@@ -1,0 +1,15 @@
+:root {
+    --color: #000000;
+    --sizing: 10px;
+}
+html, body{
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    font-size: 18px;
+  margin: 0 20px;
+}
