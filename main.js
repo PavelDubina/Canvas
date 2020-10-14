@@ -6,16 +6,16 @@ const canvas = document.getElementById("draw"),
     controls = document.querySelector('.controls');
 
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight - 30;
+canvas.height = window.innerHeight - controls.offsetHeight;
 ctx.strokeStyle = color.value;
 ctx.lineCap = "round";
 ctx.lineJoin = "round";
-ctx.lineWidth =20;
+ctx.lineWidth = size.value;
 
 
 let isDrawning = false,
-  lastX = 0,
-  lastY = 0;
+  lastX ,
+  lastY ;
 
 function draw(e) {
   if (!isDrawning) return;
