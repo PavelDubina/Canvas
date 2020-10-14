@@ -30,7 +30,6 @@ function updateColor() {
   ctx.strokeStyle = this.value;
 }
 function updateSize() {
-  console.log(this.value)
     ctx.lineWidth = this.value;
 }
 
