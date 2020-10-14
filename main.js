@@ -27,12 +27,11 @@ function draw(e) {
 }
 
 function updateColor() {
-  document.documentElement.style.setProperty("--color", color.value);
-  ctx.strokeStyle = color.value;
+  ctx.strokeStyle = this.value;
 }
 function updateSize() {
-    document.documentElement.style.setProperty("--sizing", color.value);
-    ctx.lineWidth = size.value;
+  console.log(this.value)
+    ctx.lineWidth = this.value;
 }
 
 color.addEventListener("blur", updateColor);
